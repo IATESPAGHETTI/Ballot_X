@@ -1,0 +1,10 @@
+<resources>
+    <color name="dark_purple">#1E1B26</color>
+    <color name="purple_start">#9E72C3</color>
+    <color name="purple_mid1">#9240BF</color>
+    <color name="purple_mid2">#7338A0</color>
+    <color name="purple_mid3">#4A2574</color>
+    <color name="purple_end">#0F0529</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_hint">#999999</color>
+</resources>

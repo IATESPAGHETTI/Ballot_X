@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnContinue" type="id" />
+    <item name="btnManageElections" type="id" />
+    <item name="btnViewResults" type="id" />
+    <item name="btnManageCandidates" type="id" />
+    <item name="tvWelcome" type="id" />
+</resources>

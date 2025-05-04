@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1E1B26">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Admin!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Button to Manage Elections -->
+    <Button
+        android:id="@+id/btnManageElections"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Manage Elections"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_purple"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to View Results -->
+    <Button
+        android:id="@+id/btnViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="View Results"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_purple"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to Manage Candidates -->
+    <Button
+        android:id="@+id/btnManageCandidates"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Manage Candidates"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_purple" />
+</LinearLayout>

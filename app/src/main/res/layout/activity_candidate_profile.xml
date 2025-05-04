@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1E1B26">
+
+    <!-- Candidate Name -->
+    <TextView
+        android:id="@+id/tvCandidateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidate Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Candidate Bio -->
+    <TextView
+        android:id="@+id/tvCandidateBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidate Bio"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Candidate Agenda -->
+    <TextView
+        android:id="@+id/tvCandidateAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Candidate Agenda"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1E1B26">
+
+    <!-- Voter Name -->
+    <TextView
+        android:id="@+id/tvVoterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voter Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Voter Email -->
+    <TextView
+        android:id="@+id/tvVoterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voter Email"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Voter Status (Has voted or not) -->
+    <TextView
+        android:id="@+id/tvVoterStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voter Status"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>
