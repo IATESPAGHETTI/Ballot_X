@@ -26,7 +26,7 @@
 
     <!-- Email EditText -->
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Email"
@@ -39,7 +39,7 @@
 
     <!-- Password EditText -->
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Password"
@@ -50,21 +50,11 @@
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
-    <!-- Role Spinner -->
-    <Spinner
-        android:id="@+id/spinnerRole"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@drawable/bg_input_dark"
-        android:layout_marginBottom="24dp"
-        android:spinnerMode="dropdown"
-        android:padding="8dp"
-        android:textColor="#FFFFFF"
-        android:popupBackground="#1E1B26" />
+    <!-- Role Spinner (optional, remove if not needed in Java) -->
 
     <!-- Login Button -->
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="Login"
@@ -78,20 +68,23 @@
         android:shadowDy="2"
         android:shadowRadius="4" />
 
-    <!-- Sign Up Button (added) -->
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Sign Up"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:background="@drawable/bg_button_purple"
+    <!-- Sign Up TextView (Clickable) -->
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
         android:shadowColor="#000000"
         android:shadowDx="2"
         android:shadowDy="2"
-        android:shadowRadius="4" />
+        android:shadowRadius="4"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

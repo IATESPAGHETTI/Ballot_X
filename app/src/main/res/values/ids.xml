@@ -5,4 +5,17 @@
     <item name="btnViewResults" type="id" />
     <item name="btnManageCandidates" type="id" />
     <item name="tvWelcome" type="id" />
+    <item name="spinnerRole" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="btnSignUp" type="id" />
+    <item name="signupText" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="password" type="id" />
+    <item name="username" type="id" />
+    <item name="signupButton" type="id" />
+    <item name="signup_layout" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="btnRegister" type="id" />
+    <item name="etEmail" type="id" />
+    <item name="etName" type="id" />
 </resources>
