@@ -1,36 +1,55 @@
 package com.yourname.ballot_x.activities;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yourname.ballot_x.R;
 
-
 public class VoterProfileActivity extends AppCompatActivity {
-
-    private TextView tvVoterName;
-    private TextView tvVoterEmail;
-    private TextView tvVoterStatus;
+    private Button btnProfile, btnElections, btnResults;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_voter_profile);
+        setContentView(R.layout.activity_dashboard); // Reuse dashboard layout
 
-        // Initialize Views
-        tvVoterName = findViewById(R.id.tvVoterName);
-        tvVoterEmail = findViewById(R.id.tvVoterEmail);
-        tvVoterStatus = findViewById(R.id.tvVoterStatus);
+        TextView tvDashboard = findViewById(R.id.tvDashboard);
+        tvDashboard.setText("Voter Dashboard");
 
-        // Sample data for voter (this could be fetched from Firebase or a database)
-        String voterName = "Jane Smith"; // Replace with dynamic data
-        String voterEmail = "janesmith@university.com"; // Replace with dynamic data
-        boolean hasVoted = true; // Replace with dynamic data (true or false)
+        btnProfile = findViewById(R.id.btnProfile);
+        btnElections = findViewById(R.id.btnElections);
+        btnResults = findViewById(R.id.btnResults);
 
-        // Set data to the views
-        tvVoterName.setText(voterName);
-        tvVoterEmail.setText(voterEmail);
-        tvVoterStatus.setText(hasVoted ? "You have voted" : "You have not voted yet");
+        // Rename buttons for Voter functionality
+        btnProfile.setText("My Profile");
+        btnElections.setText("Vote Now");
+        btnResults.setText("View Results");
+
+        btnProfile.setOnClickListener(v -> {
+            showVoterProfile();
+        });
+
+        btnElections.setOnClickListener(v -> {
+            showVotingDialog();
+        });
+
+        btnResults.setOnClickListener(v -> {
+            showResultsDialog();
+        });
+    }
+
+    private void showVoterProfile() {
+        // Dialog with voter info + voting history
+    }
+
+    private void showVotingDialog() {
+        // Dialog to browse active elections and vote
+    }
+
+    private void showResultsDialog() {
+        // Dialog with election results
     }
 }

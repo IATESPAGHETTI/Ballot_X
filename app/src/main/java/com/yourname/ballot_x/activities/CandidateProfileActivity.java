@@ -1,36 +1,55 @@
 package com.yourname.ballot_x.activities;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yourname.ballot_x.R;
 
-
 public class CandidateProfileActivity extends AppCompatActivity {
-
-    private TextView tvCandidateName;
-    private TextView tvCandidateBio;
-    private TextView tvCandidateAgenda;
+    private Button btnProfile, btnElections, btnResults;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_candidate_profile);
+        setContentView(R.layout.activity_dashboard); // Reuse dashboard layout
 
-        // Initialize Views
-        tvCandidateName = findViewById(R.id.tvCandidateName);
-        tvCandidateBio = findViewById(R.id.tvCandidateBio);
-        tvCandidateAgenda = findViewById(R.id.tvCandidateAgenda);
+        TextView tvDashboard = findViewById(R.id.tvDashboard);
+        tvDashboard.setText("Candidate Dashboard");
 
-        // Sample data for candidate (this could be fetched from Firebase or a database)
-        String candidateName = "John Doe"; // Replace with dynamic data
-        String candidateBio = "I am John Doe, a candidate for the president position. I believe in a transparent and student-focused approach.";
-        String candidateAgenda = "1. Improve campus facilities\n2. Increase student participation in university decisions\n3. Enhance campus security";
+        btnProfile = findViewById(R.id.btnProfile);
+        btnElections = findViewById(R.id.btnElections);
+        btnResults = findViewById(R.id.btnResults);
 
-        // Set data to the views
-        tvCandidateName.setText(candidateName);
-        tvCandidateBio.setText(candidateBio);
-        tvCandidateAgenda.setText(candidateAgenda);
+        // Rename buttons for Candidate functionality
+        btnProfile.setText("My Profile");
+        btnElections.setText("Browse Events");
+        btnResults.setText("View Results");
+
+        btnProfile.setOnClickListener(v -> {
+            showCandidateProfile();
+        });
+
+        btnElections.setOnClickListener(v -> {
+            showEventsDialog();
+        });
+
+        btnResults.setOnClickListener(v -> {
+            showResultsDialog();
+        });
+    }
+
+    private void showCandidateProfile() {
+        // Dialog with candidate info + applications status
+    }
+
+    private void showEventsDialog() {
+        // Dialog to browse events and apply to them
+    }
+
+    private void showResultsDialog() {
+        // Dialog with results for events candidate participated in
     }
 }
