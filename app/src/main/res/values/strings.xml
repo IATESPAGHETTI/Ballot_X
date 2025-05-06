@@ -1,15 +1,11 @@
 <resources>
-    <!-- Other strings -->
     <string name="app_name">Ballot_X</string>
-    <string name="role_admin">Admin</string>
-    <string name="role_candidate">Candidate</string>
-    <string name="role_voter">Voter</string>
-
-    <string-array name="role_array">
-        <item>Admin</item>
-        <item>Candidate</item>
+    <string-array name="roles_array">
+        <item>Select Role</item>
         <item>Voter</item>
+        <item>Candidate</item>
+        <item>Admin</item>
     </string-array>
 
-</resources>
 
+</resources>
